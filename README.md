@@ -1,5 +1,5 @@
 # MotionSketch
-Hello everyone!
+
 A small local Python project that turns a short, single-person video into an **approximate, hip-relative 3D mannequin animation**. It includes a browser interface, command-line interface, CPU pose estimation, center-of-mass overlay, important-frame selection, image/video exports, and an optional Blender converter.
 
 This is an MVP, not a movie-to-3D scanning system. Source images cannot reveal hidden surfaces or uniquely determine depth. The output does not reproduce the actor's appearance, clothing, global travel, or environment.
