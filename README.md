@@ -19,7 +19,7 @@ py -3.11 -m venv .venv
 .venv\Scripts\python -m streamlit run app.py
 ```
 
-macOS / Linux:
+macOS / Linux /Windows:
 
 ```sh
 python3.11 -m venv .venv
