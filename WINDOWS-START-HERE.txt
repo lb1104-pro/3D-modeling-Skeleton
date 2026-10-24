@@ -1,0 +1,51 @@
+MOTIONSKETCH - WINDOWS QUICK START
+
+Target: a 64-bit Windows 10/11 PC with an Intel/AMD processor.
+Suggested starting configuration: 8 GB RAM, Python 3.11 or 3.12 (64-bit).
+This is a design target. Windows execution and i5-class performance have not
+yet been tested on a Windows machine.
+
+FIRST TIME
+1. Extract the entire ZIP. Do not run scripts inside the compressed ZIP.
+   Put MotionSketch in a local writable folder, such as your Documents folder.
+2. Install Python 3.11 or 3.12 (64-bit) from https://www.python.org/downloads/windows/
+   Include the Python launcher (the "py" command) during installation.
+   Setup looks for Python 3.11 first, then 3.12.
+3. Double-click Setup-Windows.bat. Internet is required to install packages
+   and download the human pose model. No administrator terminal is needed.
+4. When setup finishes, double-click Start-Windows.bat.
+5. Your browser should open. If it does not, visit http://localhost:8501
+   Keep the terminal window open while using MotionSketch.
+
+EVERY TIME AFTER THAT
+Double-click Start-Windows.bat. You do not need to repeat setup.
+Close the terminal window to stop the app.
+
+FIRST TEST
+Click "Try synthetic demo" before trying your own video.
+Then upload a short clip with one person fully visible and click "Analyze video".
+Toggle joints and estimated center of mass. Build and download the export ZIP.
+
+TROUBLESHOOTING
+- Python not found: install the requested 64-bit version with the Python launcher.
+  In Command Prompt, "py -3.11 --version" or "py -3.12 --version" should work.
+- Setup failure: the window stays open so you can copy the actual error message.
+- Interrupted installation: rerun Setup-Windows.bat.
+- Model download failure: you can still use the synthetic demo. Retry the
+  download using setup or the button in the app sidebar.
+- Incompatible existing environment: rename .venv to .venv-old and rerun setup.
+- Port 8501 in use: close any previously running MotionSketch window.
+- Do not rename or move the project after setup; virtual environments may
+  contain absolute paths. If you move it, rename .venv and rerun setup.
+
+OPTIONAL BLENDER EXPORT
+Blender is only needed for GLB/BLEND files, not for PNG/JPEG/AVI or motion JSON.
+Open Command Prompt inside your extracted animation export folder and run:
+
+"C:\path\to\Blender\blender.exe" --background --python blender_export.py -- motion.json character.glb
+
+Replace the executable path with your actual installed Blender path.
+
+This is Python source code with Windows launch scripts, not a standalone EXE.
+The app runs locally and uses your browser for its interface.
+See README.md for features and limitations, and VALIDATION.md for test coverage.
