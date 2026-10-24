@@ -129,5 +129,6 @@ Keep these separate until each can be validated. Full textured movie reconstruct
 - [MediaPipe models and capabilities](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker)
 - [OpenCV video reading and writing](https://opencv.org/reading-and-writing-videos-using-opencv/)
 - [Blender glTF export API](https://docs.blender.org/api/current/bpy.ops.export_scene.html)
+- [Blender glTF export API](https://docs.blender.org/api/current/bpy.ops.import_scene.html)
 
 Third-party software and downloaded weights remain subject to their own licenses. See `VALIDATION.md` for what was actually checked in the delivery environment.
